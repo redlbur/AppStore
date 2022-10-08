@@ -15,7 +15,7 @@ class BaseTabBarController: UITabBarController {
     viewControllers = [
       createNavController(viewController: UIViewController(), title: "Today", imageName: "today_icon.png"),
       createNavController(viewController: UIViewController(), title: "Apps", imageName: "apps.png"),
-      createNavController(viewController: UIViewController(), title: "Search", imageName: "search.png")
+      createNavController(viewController: AppSearchController(), title: "Search", imageName: "search.png")
     ]
   }
   
@@ -31,9 +31,11 @@ class BaseTabBarController: UITabBarController {
     let navController = UINavigationController(rootViewController: viewController)
     navController.tabBarItem.title = title
     navController.tabBarItem.image = UIImage(named: imageName)
+    navController.navigationBar.prefersLargeTitles = true
+    navController.navigationBar.isTranslucent = true
+    
     navController.navigationBar.standardAppearance = appearance
     navController.navigationBar.scrollEdgeAppearance = navController.navigationBar.standardAppearance
-    navController.navigationBar.prefersLargeTitles = true
     
     tabBar.backgroundColor = .lightGray
     tabBar.isTranslucent = true
