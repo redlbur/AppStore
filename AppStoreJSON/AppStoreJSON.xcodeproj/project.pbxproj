@@ -15,6 +15,7 @@
 		9371057428F16FE10017BAB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9371057228F16FE10017BAB5 /* LaunchScreen.storyboard */; };
 		9371057C28F171E00017BAB5 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371057B28F171E00017BAB5 /* BaseTabBarController.swift */; };
 		9371057F28F1A5810017BAB5 /* AppSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371057E28F1A5810017BAB5 /* AppSearchController.swift */; };
+		9371058228F298DE0017BAB5 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371058128F298DE0017BAB5 /* SearchResultCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9371057528F16FE10017BAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9371057B28F171E00017BAB5 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		9371057E28F1A5810017BAB5 /* AppSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchController.swift; sourceTree = "<group>"; };
+		9371058128F298DE0017BAB5 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		9371056628F16FE00017BAB5 /* AppStoreJSON */ = {
 			isa = PBXGroup;
 			children = (
+				9371058028F298B20017BAB5 /* View */,
 				9371057D28F1A5290017BAB5 /* Controller */,
 				9371056728F16FE00017BAB5 /* AppDelegate.swift */,
 				9371056928F16FE00017BAB5 /* SceneDelegate.swift */,
@@ -79,6 +82,14 @@
 				9371057E28F1A5810017BAB5 /* AppSearchController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9371058028F298B20017BAB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9371058128F298DE0017BAB5 /* SearchResultCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 				9371057F28F1A5810017BAB5 /* AppSearchController.swift in Sources */,
 				9371056C28F16FE00017BAB5 /* ViewController.swift in Sources */,
 				9371056828F16FE00017BAB5 /* AppDelegate.swift in Sources */,
+				9371058228F298DE0017BAB5 /* SearchResultCell.swift in Sources */,
 				9371056A28F16FE00017BAB5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

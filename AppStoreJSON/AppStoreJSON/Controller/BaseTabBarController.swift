@@ -13,9 +13,10 @@ class BaseTabBarController: UITabBarController {
     super.viewDidLoad()
     
     viewControllers = [
+      createNavController(viewController: AppSearchController(), title: "Search", imageName: "search.png"),
       createNavController(viewController: UIViewController(), title: "Today", imageName: "today_icon.png"),
-      createNavController(viewController: UIViewController(), title: "Apps", imageName: "apps.png"),
-      createNavController(viewController: AppSearchController(), title: "Search", imageName: "search.png")
+      createNavController(viewController: UIViewController(), title: "Apps", imageName: "apps.png")
+      
     ]
   }
   
@@ -23,7 +24,7 @@ class BaseTabBarController: UITabBarController {
     
     let appearance = UINavigationBarAppearance()
     appearance.configureWithOpaqueBackground()
-    appearance.backgroundColor = .lightGray
+    appearance.backgroundColor = UIColor(white: 0.8, alpha: 0.5)
     
     viewController.navigationItem.title = title
     viewController.view.backgroundColor = .white
@@ -37,7 +38,7 @@ class BaseTabBarController: UITabBarController {
     navController.navigationBar.standardAppearance = appearance
     navController.navigationBar.scrollEdgeAppearance = navController.navigationBar.standardAppearance
     
-    tabBar.backgroundColor = .lightGray
+    tabBar.backgroundColor = UIColor(white: 0.8, alpha: 0.5)
     tabBar.isTranslucent = true
     
     return navController
