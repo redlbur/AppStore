@@ -17,6 +17,7 @@
 		9371057F28F1A5810017BAB5 /* AppSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371057E28F1A5810017BAB5 /* AppSearchController.swift */; };
 		9371058228F298DE0017BAB5 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371058128F298DE0017BAB5 /* SearchResultCell.swift */; };
 		937105C9290933C20017BAB5 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105C8290933C10017BAB5 /* UIView+Layout.swift */; };
+		937105CB29093AB40017BAB5 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105CA29093AB40017BAB5 /* VerticalStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9371057E28F1A5810017BAB5 /* AppSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchController.swift; sourceTree = "<group>"; };
 		9371058128F298DE0017BAB5 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		937105C8290933C10017BAB5 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Layout.swift"; path = "../../../../Courses/[letsbuildthatapp.com] AppStore JSON APIs/01. Introduction - Setting Up UI/05. Extensions and Helpers for Code Reduction/UIView+Layout.swift"; sourceTree = "<group>"; };
+		937105CA29093AB40017BAB5 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				937105C8290933C10017BAB5 /* UIView+Layout.swift */,
+				937105CA29093AB40017BAB5 /* VerticalStackView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				9371057F28F1A5810017BAB5 /* AppSearchController.swift in Sources */,
 				9371056C28F16FE00017BAB5 /* ViewController.swift in Sources */,
 				9371056828F16FE00017BAB5 /* AppDelegate.swift in Sources */,
+				937105CB29093AB40017BAB5 /* VerticalStackView.swift in Sources */,
 				9371058228F298DE0017BAB5 /* SearchResultCell.swift in Sources */,
 				9371056A28F16FE00017BAB5 /* SceneDelegate.swift in Sources */,
 			);

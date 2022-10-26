@@ -59,21 +59,18 @@ class SearchResultCell: UICollectionViewCell {
     return imageView
   }
   
+  //MARK: - OVERRIDE INIT
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
     
     backgroundColor = .yellow
     
-    let labelsStackView = UIStackView(arrangedSubviews: [
-      nameLabel,
-      categoryLabel,
-      ratingsLabel
-    ])
-    labelsStackView.axis = .vertical
-    
     let infoTopStackView = UIStackView(arrangedSubviews: [
       appIconImageView,
-      labelsStackView,
+      VerticalStackView(arrangedSubviews: [
+      nameLabel, categoryLabel, ratingsLabel
+      ]),
       getButton
     ])
     infoTopStackView.spacing = 12
@@ -85,11 +82,7 @@ class SearchResultCell: UICollectionViewCell {
     screenshotsStackView.spacing = 12
     screenshotsStackView.distribution = .fillEqually
     
-    let overallStackView = UIStackView(arrangedSubviews: [
-      infoTopStackView, screenshotsStackView
-    ])
-    overallStackView.axis = .vertical
-    overallStackView.spacing = 16
+    let overallStackView = VerticalStackView(arrangedSubviews: [infoTopStackView, screenshotsStackView], spacing: 16)
     
     addSubview(overallStackView)
     overallStackView.fillSuperview(padding: .init(top: 16, left: 16, bottom: 16, right: 16))
