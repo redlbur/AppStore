@@ -19,6 +19,7 @@
 		937105C9290933C20017BAB5 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105C8290933C10017BAB5 /* UIView+Layout.swift */; };
 		937105CB29093AB40017BAB5 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105CA29093AB40017BAB5 /* VerticalStackView.swift */; };
 		937105CE29097D750017BAB5 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105CD29097D750017BAB5 /* SearchResult.swift */; };
+		937105D129099B070017BAB5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105D029099B070017BAB5 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		937105C8290933C10017BAB5 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Layout.swift"; path = "../../../../Courses/[letsbuildthatapp.com] AppStore JSON APIs/01. Introduction - Setting Up UI/05. Extensions and Helpers for Code Reduction/UIView+Layout.swift"; sourceTree = "<group>"; };
 		937105CA29093AB40017BAB5 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		937105CD29097D750017BAB5 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		937105D029099B070017BAB5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		9371056628F16FE00017BAB5 /* AppStoreJSON */ = {
 			isa = PBXGroup;
 			children = (
+				937105CF29099AFB0017BAB5 /* Service */,
 				937105CC29097D430017BAB5 /* Model */,
 				937105C7290933850017BAB5 /* Helpers */,
 				9371058028F298B20017BAB5 /* View */,
@@ -115,6 +118,14 @@
 				937105CD29097D750017BAB5 /* SearchResult.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		937105CF29099AFB0017BAB5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				937105D029099B070017BAB5 /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				9371056C28F16FE00017BAB5 /* ViewController.swift in Sources */,
 				9371056828F16FE00017BAB5 /* AppDelegate.swift in Sources */,
 				937105CB29093AB40017BAB5 /* VerticalStackView.swift in Sources */,
+				937105D129099B070017BAB5 /* Service.swift in Sources */,
 				9371058228F298DE0017BAB5 /* SearchResultCell.swift in Sources */,
 				9371056A28F16FE00017BAB5 /* SceneDelegate.swift in Sources */,
 			);
