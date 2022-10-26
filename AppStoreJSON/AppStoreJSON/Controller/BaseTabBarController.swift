@@ -24,7 +24,7 @@ class BaseTabBarController: UITabBarController {
     
     let appearance = UINavigationBarAppearance()
     appearance.configureWithOpaqueBackground()
-    appearance.backgroundColor = UIColor(white: 0.8, alpha: 0.5)
+    appearance.backgroundColor = UIColor(white: 0.8, alpha: 1)
     
     viewController.navigationItem.title = title
     viewController.view.backgroundColor = .white
