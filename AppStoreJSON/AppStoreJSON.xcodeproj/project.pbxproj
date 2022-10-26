@@ -18,6 +18,7 @@
 		9371058228F298DE0017BAB5 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371058128F298DE0017BAB5 /* SearchResultCell.swift */; };
 		937105C9290933C20017BAB5 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105C8290933C10017BAB5 /* UIView+Layout.swift */; };
 		937105CB29093AB40017BAB5 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105CA29093AB40017BAB5 /* VerticalStackView.swift */; };
+		937105CE29097D750017BAB5 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105CD29097D750017BAB5 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9371058128F298DE0017BAB5 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		937105C8290933C10017BAB5 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Layout.swift"; path = "../../../../Courses/[letsbuildthatapp.com] AppStore JSON APIs/01. Introduction - Setting Up UI/05. Extensions and Helpers for Code Reduction/UIView+Layout.swift"; sourceTree = "<group>"; };
 		937105CA29093AB40017BAB5 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		937105CD29097D750017BAB5 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		9371056628F16FE00017BAB5 /* AppStoreJSON */ = {
 			isa = PBXGroup;
 			children = (
+				937105CC29097D430017BAB5 /* Model */,
 				937105C7290933850017BAB5 /* Helpers */,
 				9371058028F298B20017BAB5 /* View */,
 				9371057D28F1A5290017BAB5 /* Controller */,
@@ -104,6 +107,14 @@
 				937105CA29093AB40017BAB5 /* VerticalStackView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		937105CC29097D430017BAB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				937105CD29097D750017BAB5 /* SearchResult.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				937105C9290933C20017BAB5 /* UIView+Layout.swift in Sources */,
+				937105CE29097D750017BAB5 /* SearchResult.swift in Sources */,
 				9371057C28F171E00017BAB5 /* BaseTabBarController.swift in Sources */,
 				9371057F28F1A5810017BAB5 /* AppSearchController.swift in Sources */,
 				9371056C28F16FE00017BAB5 /* ViewController.swift in Sources */,
