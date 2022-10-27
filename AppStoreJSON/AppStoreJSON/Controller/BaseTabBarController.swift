@@ -13,7 +13,7 @@ class BaseTabBarController: UITabBarController {
     super.viewDidLoad()
     
     viewControllers = [
-      createNavController(viewController: AppsController(), title: "Apps", imageName: "apps.png"),
+      createNavController(viewController: AppsPageController(), title: "Apps", imageName: "apps.png"),
       createNavController(viewController: UIViewController(), title: "Today", imageName: "today_icon.png"),
       createNavController(viewController: AppSearchController(), title: "Search", imageName: "search.png")
     ]
@@ -37,7 +37,7 @@ class BaseTabBarController: UITabBarController {
     navController.navigationBar.standardAppearance = appearance
     navController.navigationBar.scrollEdgeAppearance = navController.navigationBar.standardAppearance
     
-    tabBar.backgroundColor = UIColor(white: 0.8, alpha: 0.5)
+    tabBar.backgroundColor = UIColor(white: 0.93, alpha: 0.5)
     tabBar.isTranslucent = true
     
     return navController
