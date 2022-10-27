@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 
-class AppSearchController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
+class AppSearchController: BaseListController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
   
   fileprivate let cellId = "SearchID"
   
@@ -92,18 +92,6 @@ class AppSearchController: UICollectionViewController, UICollectionViewDelegateF
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! SearchResultCell
     cell.appResult = appResult[indexPath.row]
     return cell
-  }
-  
-  
-  
-  
-  
-  init() {
-    super.init(collectionViewLayout: UICollectionViewFlowLayout())
-  }
-  
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
   }
   
 }

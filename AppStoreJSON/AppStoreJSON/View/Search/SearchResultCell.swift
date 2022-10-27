@@ -76,6 +76,7 @@ class SearchResultCell: UICollectionViewCell {
     imageView.clipsToBounds = true
     imageView.layer.borderWidth = 0.5
     imageView.layer.borderColor = UIColor(white: 0.5, alpha: 0.5).cgColor
+    imageView.contentMode = .scaleAspectFill
     return imageView
   }
   
