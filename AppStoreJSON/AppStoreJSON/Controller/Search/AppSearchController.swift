@@ -63,7 +63,7 @@ class AppSearchController: BaseListController, UICollectionViewDelegateFlowLayou
   fileprivate var appResult = [Result]()
   
   fileprivate func fetchITunesApps() {
-    Service.shared.fetchApps(searchTerm: "Twitter") { results,err  in
+    Service.shared.fetchApps(searchTerm: "Twitter") { results, err  in
       
       if let err = err {
         print("Failed to fetch apps:", err) 

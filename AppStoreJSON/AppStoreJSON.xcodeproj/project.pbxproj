@@ -16,7 +16,7 @@
 		9361235F290AA51500179670 /* AppsPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361235E290AA51500179670 /* AppsPageHeader.swift */; };
 		93612361290AA6B300179670 /* AppsHeaderHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93612360290AA6B300179670 /* AppsHeaderHorizontalController.swift */; };
 		93612363290AA8B300179670 /* AppsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93612362290AA8B300179670 /* AppsHeaderCell.swift */; };
-		93612365290AC7A500179670 /* AppsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93612364290AC7A500179670 /* AppsResult.swift */; };
+		93612365290AC7A500179670 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93612364290AC7A500179670 /* AppGroup.swift */; };
 		9371056828F16FE00017BAB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371056728F16FE00017BAB5 /* AppDelegate.swift */; };
 		9371056A28F16FE00017BAB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371056928F16FE00017BAB5 /* SceneDelegate.swift */; };
 		9371056C28F16FE00017BAB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371056B28F16FE00017BAB5 /* ViewController.swift */; };
@@ -30,6 +30,7 @@
 		937105CB29093AB40017BAB5 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105CA29093AB40017BAB5 /* VerticalStackView.swift */; };
 		937105CE29097D750017BAB5 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105CD29097D750017BAB5 /* SearchResult.swift */; };
 		937105D129099B070017BAB5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937105D029099B070017BAB5 /* Service.swift */; };
+		938F5E8729166D8E00149214 /* SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938F5E8629166D8E00149214 /* SocialApp.swift */; };
 		AA6F6D6DAA646FE21A736972 /* Pods_AppStoreJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFC47DDAABFF9DD98D39167 /* Pods_AppStoreJSON.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +45,7 @@
 		9361235E290AA51500179670 /* AppsPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageHeader.swift; sourceTree = "<group>"; };
 		93612360290AA6B300179670 /* AppsHeaderHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHeaderHorizontalController.swift; sourceTree = "<group>"; };
 		93612362290AA8B300179670 /* AppsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHeaderCell.swift; sourceTree = "<group>"; };
-		93612364290AC7A500179670 /* AppsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsResult.swift; sourceTree = "<group>"; };
+		93612364290AC7A500179670 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 		9371056428F16FE00017BAB5 /* AppStoreJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9371056728F16FE00017BAB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9371056928F16FE00017BAB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		937105CA29093AB40017BAB5 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		937105CD29097D750017BAB5 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		937105D029099B070017BAB5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		938F5E8629166D8E00149214 /* SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApp.swift; sourceTree = "<group>"; };
 		B7DA472ACED9A5FE8A8AFC1C /* Pods-AppStoreJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSON.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreJSON/Pods-AppStoreJSON.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C143AB9694E553238C75CA /* Pods-AppStoreJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSON.release.xcconfig"; path = "Target Support Files/Pods-AppStoreJSON/Pods-AppStoreJSON.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,7 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				937105CD29097D750017BAB5 /* SearchResult.swift */,
-				93612364290AC7A500179670 /* AppsResult.swift */,
+				93612364290AC7A500179670 /* AppGroup.swift */,
+				938F5E8629166D8E00149214 /* SocialApp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -330,12 +333,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				937105C9290933C20017BAB5 /* UIView+Layout.swift in Sources */,
+				938F5E8729166D8E00149214 /* SocialApp.swift in Sources */,
 				9361234F290A903000179670 /* AppsPageController.swift in Sources */,
 				937105CE29097D750017BAB5 /* SearchResult.swift in Sources */,
 				9371057C28F171E00017BAB5 /* BaseTabBarController.swift in Sources */,
 				9371057F28F1A5810017BAB5 /* AppSearchController.swift in Sources */,
 				9371056C28F16FE00017BAB5 /* ViewController.swift in Sources */,
-				93612365290AC7A500179670 /* AppsResult.swift in Sources */,
+				93612365290AC7A500179670 /* AppGroup.swift in Sources */,
 				93612356290A931600179670 /* AppsGroupCell.swift in Sources */,
 				9371056828F16FE00017BAB5 /* AppDelegate.swift in Sources */,
 				937105CB29093AB40017BAB5 /* VerticalStackView.swift in Sources */,

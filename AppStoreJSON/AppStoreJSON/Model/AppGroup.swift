@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AppsResult:Decodable {
+struct AppGroup:Decodable {
   let feed: Feed
 }
 

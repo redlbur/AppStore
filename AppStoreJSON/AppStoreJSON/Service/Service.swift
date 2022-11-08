@@ -36,8 +36,17 @@ class Service {
     }.resume() //fires off the request
   }
   
-  func fetchApplications(completion: @escaping (AppsResult?, Error?) -> ()) {
+  func fetchTopFree(completion: @escaping (AppGroup?, Error?) -> ()) {
     let urlString = "https://rss.applemarketingtools.com/api/v2/us/apps/top-free/50/apps.json"
+    fetchAppGroup(urlString: urlString, completion: completion)
+  }
+  
+  func fetchTopMusic(completion: @escaping (AppGroup?, Error?) -> ()) {
+    let urlString = "https://rss.applemarketingtools.com/api/v2/us/music/most-played/50/songs.json"
+    fetchAppGroup(urlString: urlString, completion: completion)
+  }
+  
+  func fetchAppGroup(urlString: String, completion: @escaping (AppGroup?, Error?) -> Void) {
     guard let url = URL(string: urlString) else { return }
     
     URLSession.shared.dataTask(with: url) { data, response, err in
@@ -49,7 +58,7 @@ class Service {
       
       guard let data = data else { return }
       do {
-        let appResult = try JSONDecoder().decode(AppsResult.self, from: data)
+        let appResult = try JSONDecoder().decode(AppGroup.self, from: data)
         completion(appResult, nil)
         
       } catch let jsonError {
@@ -58,5 +67,31 @@ class Service {
       }
  
     }.resume()
+  }
+  
+  func fetchSocialApps(completion: @escaping ([SocialApp]?, Error?) -> Void) {
+    let urlString = "https://api.letsbuildthatapp.com/appstore/social"
+    
+    guard let url = URL(string: urlString) else { return }
+    
+    URLSession.shared.dataTask(with: url) { data, response, err in
+      if let err = err {
+        print("Failed to fetch apps:", err)
+        completion(nil, err)
+        return
+      }
+      
+      guard let data = data else { return }
+      do {
+        let socialApp = try JSONDecoder().decode([SocialApp].self, from: data)
+        completion(socialApp, nil)
+        
+      } catch let jsonError {
+        print("Failed to decode json:", jsonError)
+        completion(nil, jsonError)
+      }
+ 
+    }.resume()
+    
   }
 }
