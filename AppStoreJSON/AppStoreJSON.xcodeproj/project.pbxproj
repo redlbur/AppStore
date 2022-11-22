@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		931D3CE8292C003A00BF37F8 /* HorizontalSnappingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931D3CE7292C003A00BF37F8 /* HorizontalSnappingController.swift */; };
 		931D3CEA292C05F500BF37F8 /* BetterSnappingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931D3CE9292C05F500BF37F8 /* BetterSnappingLayout.swift */; };
+		931D3CED292CB49C00BF37F8 /* AppDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931D3CEC292CB49C00BF37F8 /* AppDetailController.swift */; };
+		931D3CF2292CC29D00BF37F8 /* AppDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931D3CF1292CC29D00BF37F8 /* AppDetailCell.swift */; };
 		9361234F290A903000179670 /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9361234E290A903000179670 /* AppsPageController.swift */; };
 		93612351290A90C500179670 /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93612350290A90C500179670 /* BaseListController.swift */; };
 		93612356290A931600179670 /* AppsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93612355290A931600179670 /* AppsGroupCell.swift */; };
@@ -40,6 +42,8 @@
 		8EFC47DDAABFF9DD98D39167 /* Pods_AppStoreJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		931D3CE7292C003A00BF37F8 /* HorizontalSnappingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSnappingController.swift; sourceTree = "<group>"; };
 		931D3CE9292C05F500BF37F8 /* BetterSnappingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterSnappingLayout.swift; sourceTree = "<group>"; };
+		931D3CEC292CB49C00BF37F8 /* AppDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailController.swift; sourceTree = "<group>"; };
+		931D3CF1292CC29D00BF37F8 /* AppDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailCell.swift; sourceTree = "<group>"; };
 		9361234E290A903000179670 /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
 		93612350290A90C500179670 /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
 		93612355290A931600179670 /* AppsGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsGroupCell.swift; sourceTree = "<group>"; };
@@ -99,9 +103,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		931D3CEB292CB48600BF37F8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				931D3CEC292CB49C00BF37F8 /* AppDetailController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		931D3CF0292CC28500BF37F8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				931D3CF1292CC29D00BF37F8 /* AppDetailCell.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		93612352290A917E00179670 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				931D3CEB292CB48600BF37F8 /* Details */,
 				9361234E290A903000179670 /* AppsPageController.swift */,
 				93612358290A96B000179670 /* AppsHorizontalController.swift */,
 				93612360290AA6B300179670 /* AppsHeaderHorizontalController.swift */,
@@ -120,6 +141,7 @@
 		93612354290A92FF00179670 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				931D3CF0292CC28500BF37F8 /* Details */,
 				93612355290A931600179670 /* AppsGroupCell.swift */,
 				9361235A290A9BD000179670 /* AppRowCell.swift */,
 				9361235E290AA51500179670 /* AppsPageHeader.swift */,
@@ -354,9 +376,11 @@
 				937105D129099B070017BAB5 /* Service.swift in Sources */,
 				93612361290AA6B300179670 /* AppsHeaderHorizontalController.swift in Sources */,
 				9361235F290AA51500179670 /* AppsPageHeader.swift in Sources */,
+				931D3CED292CB49C00BF37F8 /* AppDetailController.swift in Sources */,
 				9371058228F298DE0017BAB5 /* SearchResultCell.swift in Sources */,
 				9361235D290A9D0300179670 /* Extensions.swift in Sources */,
 				93612351290A90C500179670 /* BaseListController.swift in Sources */,
+				931D3CF2292CC29D00BF37F8 /* AppDetailCell.swift in Sources */,
 				93612363290AA8B300179670 /* AppsHeaderCell.swift in Sources */,
 				9371056A28F16FE00017BAB5 /* SceneDelegate.swift in Sources */,
 				93612359290A96B000179670 /* AppsHorizontalController.swift in Sources */,
