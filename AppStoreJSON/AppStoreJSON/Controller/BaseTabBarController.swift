@@ -21,24 +21,24 @@ class BaseTabBarController: UITabBarController {
   
   fileprivate func createNavController(viewController: UIViewController, title: String, imageName: String) -> UIViewController {
     
-    let appearance = UINavigationBarAppearance()
-    appearance.configureWithOpaqueBackground()
-    appearance.backgroundColor = UIColor(white: 1, alpha: 0.95)
-    
-    viewController.navigationItem.title = title
-    //viewController.view.backgroundColor = .white
+//    let appearance = UINavigationBarAppearance()
+//    appearance.configureWithOpaqueBackground()
+    //appearance.backgroundColor = UIColor(white: 1, alpha: 0.95)
     
     let navController = UINavigationController(rootViewController: viewController)
     navController.tabBarItem.title = title
     navController.tabBarItem.image = UIImage(named: imageName)
     navController.navigationBar.prefersLargeTitles = true
-    navController.navigationBar.isTranslucent = true
+    viewController.navigationItem.title = title
+    viewController.view.backgroundColor = .white
     
-    navController.navigationBar.standardAppearance = appearance
-    navController.navigationBar.scrollEdgeAppearance = navController.navigationBar.standardAppearance
+    //navController.navigationBar.isTranslucent = true
     
-    tabBar.backgroundColor = UIColor(white: 0.93, alpha: 0.5)
-    tabBar.isTranslucent = true
+    //navController.navigationBar.standardAppearance = appearance
+    //navController.navigationBar.scrollEdgeAppearance = navController.navigationBar.standardAppearance
+    
+    //tabBar.backgroundColor = UIColor(white: 0.93, alpha: 0.5)
+    //tabBar.isTranslucent = true
     
     return navController
     

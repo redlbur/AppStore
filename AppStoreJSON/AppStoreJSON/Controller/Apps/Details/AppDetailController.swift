@@ -11,7 +11,7 @@ class AppDetailController: BaseListController, UICollectionViewDelegateFlowLayou
   
   var appId: String! {
     didSet {
-      print("Here is my appId:", appId)
+      print("Here is my appId:", appId ?? "")
       let urlString = "https://itunes.apple.com/lookup?id=\(appId ?? "")"
       Service.shared.fetchGenericJSONData(urlString: urlString) { (result: SearchResult?, err) in
         let app = result?.results.first

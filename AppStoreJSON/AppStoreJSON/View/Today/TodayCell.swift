@@ -9,10 +9,17 @@ import UIKit
 
 class TodayCell: UICollectionViewCell {
   
+  let image = UIImageView(image: UIImage(named: "garden"))
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
     
-    backgroundColor = .red
+    backgroundColor = .white
+    layer.cornerRadius = 16
+    
+    addSubview(image)
+    image.contentMode = .scaleAspectFill
+    image.centerInSuperview(size: .init(width: 250, height: 250))
   }
   
   required init?(coder: NSCoder) {

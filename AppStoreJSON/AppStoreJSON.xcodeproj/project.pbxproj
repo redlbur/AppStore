@@ -43,6 +43,7 @@
 		93E0EBFF29BA1C070051EAAA /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0EBFE29BA1C070051EAAA /* UIView+Layout.swift */; };
 		93E0EC0229BA21300051EAAA /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0EC0129BA21300051EAAA /* TodayController.swift */; };
 		93E0EC0529BA228C0051EAAA /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0EC0429BA228C0051EAAA /* TodayCell.swift */; };
+		93E0EC0729BB0BCF0051EAAA /* TodayFullscreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0EC0629BB0BCF0051EAAA /* TodayFullscreenController.swift */; };
 		AA6F6D6DAA646FE21A736972 /* Pods_AppStoreJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFC47DDAABFF9DD98D39167 /* Pods_AppStoreJSON.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		93E0EBFE29BA1C070051EAAA /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		93E0EC0129BA21300051EAAA /* TodayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayController.swift; sourceTree = "<group>"; };
 		93E0EC0429BA228C0051EAAA /* TodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCell.swift; sourceTree = "<group>"; };
+		93E0EC0629BB0BCF0051EAAA /* TodayFullscreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayFullscreenController.swift; sourceTree = "<group>"; };
 		B7DA472ACED9A5FE8A8AFC1C /* Pods-AppStoreJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSON.debug.xcconfig"; path = "Target Support Files/Pods-AppStoreJSON/Pods-AppStoreJSON.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C143AB9694E553238C75CA /* Pods-AppStoreJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreJSON.release.xcconfig"; path = "Target Support Files/Pods-AppStoreJSON/Pods-AppStoreJSON.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				93E0EC0129BA21300051EAAA /* TodayController.swift */,
+				93E0EC0629BB0BCF0051EAAA /* TodayFullscreenController.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				93612363290AA8B300179670 /* AppsHeaderCell.swift in Sources */,
 				931D3CF4292CCC5D00BF37F8 /* PreviewCell.swift in Sources */,
 				931D3CF8292CD5A000BF37F8 /* ReviewRowCell.swift in Sources */,
+				93E0EC0729BB0BCF0051EAAA /* TodayFullscreenController.swift in Sources */,
 				9371056A28F16FE00017BAB5 /* SceneDelegate.swift in Sources */,
 				93612359290A96B000179670 /* AppsHorizontalController.swift in Sources */,
 				9361235B290A9BD000179670 /* AppRowCell.swift in Sources */,
